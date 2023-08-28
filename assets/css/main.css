@@ -1939,7 +1939,7 @@ form {
   padding: 45px;
 }
 
-h2 {
+.email-form h2 {
   color: #122293;
   font-size: 32px;
   font-weight: 700;
