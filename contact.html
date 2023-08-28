@@ -111,7 +111,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container" >
 
         <div>
           
@@ -150,35 +150,42 @@
 
           </div>
 
-          <div class="col-lg-8">
-            <form action="https://formsubmit.co/merajilogistics@gmail.com" method="post" role="form" class="php-email-form">
+          <div class="col-lg-8 contactform" >
+            <form action="https://formsubmit.co/merajilogistics@gmail.com" method="post" role="form" class="email-form">
               <input type="hidden" name="_next" value="https://merajilogistics.com/thanks.html">
               <input type="text" name="_honey" style="display: none;">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_template" value="table">
-              <!-- <input type="hidden" name="_subject" value="New submission!"> -->
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
-                </div>
+              <input type="hidden" name="_subject" value="New submission!">
+              <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="name" name="Name" id="name_input" required>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" required>
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="e-mail" name="Email" id="email_input" required>
               </div>
-              <div class="form-group mt-3">
-                <textarea  class="form-control" name="Message" rows="5" placeholder="Message" required></textarea>
+              <div class="subject">
+                <label for="subject"></label>
+                <input type="text" placeholder="subject" name="Subject" id="name_input" required>
+                </select>
               </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="Message" placeholder="message" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" value="submit" id="form_button"/>
+              </div>
             </form>
           </div><!-- End Contact Form -->
+
+
+
+          
+
+
+
 
         </div>
 

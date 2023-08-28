@@ -1387,127 +1387,6 @@ section {
 /*--------------------------------------------------------------
 # Get a Quote Section
 --------------------------------------------------------------*/
-.get-a-quote .quote-bg {
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-
-.get-a-quote .php-email-form {
-  background: #f3f6fc;
-  padding: 40px;
-  height: 100%;
-}
-
-@media (max-width: 575px) {
-  .get-a-quote .php-email-form {
-    padding: 20px;
-  }
-}
-
-.get-a-quote .php-email-form h3 {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.get-a-quote .php-email-form h4 {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 20px 0 0 0;
-}
-
-.get-a-quote .php-email-form p {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.get-a-quote .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #df1529;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.get-a-quote .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.get-a-quote .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.get-a-quote .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
-  animation: animate-loading 1s linear infinite;
-}
-
-.get-a-quote .php-email-form input,
-.get-a-quote .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 0;
-}
-
-.get-a-quote .php-email-form input:focus,
-.get-a-quote .php-email-form textarea:focus {
-  border-color: var(--color-primary);
-}
-
-.get-a-quote .php-email-form input {
-  padding: 12px 15px;
-}
-
-.get-a-quote .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.get-a-quote .php-email-form button[type=submit] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.get-a-quote .php-email-form button[type=submit]:hover {
-  background: rgba(13, 66, 255, 0.8);
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1545,93 +1424,7 @@ section {
   color: rgba(14, 29, 52, 0.8);
 }
 
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
 
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #df1529;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 4px;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 5px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: rgba(13, 66, 255, 0.8);
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Service Details Section
@@ -2092,4 +1885,174 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
+}
+
+
+
+/*  ============================ New Contact us ========================== */
+
+.email-form {
+  font-family: Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  border: solid 2px #122293;
+  margin-bottom: 20px;
+  
+}
+
+.contact {
+  padding: 10px;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #122293;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #122293;
+  margin: 0 auto;
+  max-width: 650px;
+  max-height: 650px;
+  position: relative;
+  width: 100%;
+}
+
+form {
+  padding: 45px;
+}
+
+h2 {
+  color: #122293;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #122293;
+	color: #122293;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('http://web.missouri.edu/~blly4b/ISLT7360/FinalProject/FINAL/icon-ios7-arrow-down-32.png') no-repeat right;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #122293;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #122293;
+  color: #122293;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.submit {
+  text-align: center;
+}
+
+#form_button:hover {
+  background: #122293;
+  color: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .email-form {
+    width: fit-content;
+    margin: 2%;
+    align-self: center;
+    padding: 15px;
+  }
+  .contactform {
+    width: fit-content;
+  }
+  .contact {
+    margin: 0;
+    padding: 0;
+  }
 }
